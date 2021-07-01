@@ -9,6 +9,7 @@ import { useOnScreen } from "../../hooks"
 import ContentWrapper from "../../styles/contentWrapper"
 import Underlining from "../../styles/underlining"
 import Social from "../social"
+import sideEmoji from "../../../public/sideEmoji.png"
 
 const StyledSection = styled(motion.section)`
   width: 100%;
@@ -44,9 +45,9 @@ const StyledContentWrapper = styled(ContentWrapper)`
       .avatar {
         width: 100%;
         max-width: 8.75rem;
-        border-radius: 50%;
         margin-right: 4rem;
         margin-bottom: 2rem;
+        border-left: 2px solid black;
         @media (min-width: ${({ theme }) => theme.breakpoints.sm}) {
           margin-bottom: 0;
         }
@@ -81,14 +82,14 @@ const Contact = ({ content }) => {
         <h3>{frontmatter.title}</h3>
         <MDXRenderer>{body}</MDXRenderer>
         <div className="profile">
-          <Img
+        <img
             className="avatar"
-            fluid={frontmatter.profileImage.childImageSharp.fluid}
+            src={sideEmoji}
           />
           <div className="details">
             <strong>{frontmatter.name}</strong>
             <br />
-            <a href={`mailto:${frontmatter.email}`}>
+            <a href={`mailto:hannahwischnia@gmail.com}`}>
               <Underlining highlight>{frontmatter.email}</Underlining>
             </a>
           </div>

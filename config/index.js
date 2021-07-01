@@ -2,7 +2,7 @@ module.exports = {
   //-- SITE SETTINGS -----
   author: "@konstantinmuenster",
   siteTitle: "Hannah Wischnia",
-  siteShortTitle: "<hiw />", // Used as logo text in header, footer, and splash screen
+  siteShortTitle: "<hannahWischnia />", // Used as logo text in header, footer, and splash screen
   siteDescription:
     "A modern one-page portfolio with a clean yet expressive design.",
   siteUrl: "https://gatsby-starter-portfolio-minimal.netlify.app/",
@@ -53,7 +53,8 @@ module.exports = {
     {
       name: "Spell With A Friend",
       url: "http://www.spellwithafriend.com/",
-      description: "An application that lets you play the NYTimes Spelling Bee with friends",
+      description:
+        "An application that lets you play the NYTimes Spelling Bee with friends",
       img: "/bee-clipart.png",
       categories: ["test1", "test2", "test3"],
     },
@@ -61,7 +62,8 @@ module.exports = {
       name: "Meedle",
       url: "https://meedleapp.herokuapp.com",
       img: "/map.png",
-      description: "An app that leverages the Google Maps API to help you and your friends find a place to meet",
+      description:
+        "An app that leverages the Google Maps API to help you and your friends find a place to meet",
       categories: ["test1", "test2", "test3"],
     },
   ],
@@ -77,8 +79,7 @@ module.exports = {
     },
     {
       name: "Github",
-      url:
-        "https://github.com/wisch628",
+      url: "https://github.com/wisch628",
     },
     {
       name: "Mail",
@@ -94,8 +95,8 @@ module.exports = {
         url: "/#about",
       },
       {
-        name: "Features",
-        url: "/#projects",
+        name: "Projects",
+        url: "/#articles",
       },
       {
         name: "Contact",

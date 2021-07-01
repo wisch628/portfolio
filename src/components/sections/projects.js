@@ -13,6 +13,7 @@ import Underlining from "../../styles/underlining"
 import Button from "../../styles/button"
 import Icon from "../../components/icons"
 import { lightTheme, darkTheme } from "../../styles/theme"
+import meedleDemo from '../../../public/meedleDemo.mp4'
 
 const StyledSection = styled.section`
   width: 100%;
@@ -182,17 +183,17 @@ const StyledProject = styled(motion.div)`
       }
     }
   }
-  .screenshot {
+  .video {
     width: 100%;
     max-width: 25rem;
     height: 15rem;
-    border-radius: ${({ theme }) => theme.borderRadius};
-    box-shadow: 0 0 2.5rem rgba(0, 0, 0, 0.16);
-    transition: all 0.3s ease-out;
-    &:hover {
-      transform: translate3d(0px, -0.125rem, 0px);
-      box-shadow: 0 0 2.5rem rgba(0, 0, 0, 0.32);
-    }
+    // border-radius: ${({ theme }) => theme.borderRadius};
+    // box-shadow: 0 0 2.5rem rgba(0, 0, 0, 0.16);
+    // transition: all 0.3s ease-out;
+    // &:hover {
+    //   transform: translate3d(0px, -0.125rem, 0px);
+    //   box-shadow: 0 0 2.5rem rgba(0, 0, 0, 0.32);
+    // }
     @media (min-width: ${({ theme }) => theme.breakpoints.md}) {
       height: 18.75rem;
     }
@@ -285,18 +286,15 @@ const Projects = ({ content }) => {
                   }
                 >
                   <div className="details">
-                    <div className="category">
-                      {frontmatter.emoji} {frontmatter.category}
-                    </div>
                     <div className="title">{frontmatter.title}</div>
                     <MDXRenderer>{body}</MDXRenderer>
-                    <div className="tags">
+                    {/* <div className="tags">
                       {frontmatter.tags.map(tag => (
                         <Underlining key={tag} highlight>
                           {tag}
                         </Underlining>
                       ))}
-                    </div>
+                    </div> */}
                     <div className="links">
                       {frontmatter.github && (
                         <a
@@ -338,10 +336,9 @@ const Projects = ({ content }) => {
                   <VisibilitySensor
                     onChange={() => setVisibleProject(frontmatter.position)}
                   >
-                    <Img
-                      className="screenshot"
-                      fluid={frontmatter.screenshot.childImageSharp.fluid}
-                    />
+                   <video width="320" height="240" muted={true} autoPlay={true} loop={true} className="video">
+                     <source src={meedleDemo} type="video/mp4" />
+                  </video>
                   </VisibilitySensor>
                 </StyledProject>
               </VisibilitySensor>

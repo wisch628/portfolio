@@ -2,12 +2,12 @@ import React, { useState, useEffect, useContext } from "react"
 import styled from "styled-components"
 import SkeletonLoader from "tiny-skeleton-loader-react"
 import { motion, useAnimation } from "framer-motion"
-import { StyledSocialProfile } from "../social";
+import { StyledSocialProfile } from "../social"
 import Context from "../../context"
 import ContentWrapper from "../../styles/contentWrapper"
 import Underlining from "../../styles/underlining"
 import { parseDate } from "../../utils"
-import { projects, shownArticles} from "../../../config"
+import { projects, shownArticles } from "../../../config"
 // import { rssFeed,  } from "../../../config"
 import { lightTheme, darkTheme } from "../../styles/theme"
 
@@ -183,12 +183,13 @@ const Articles = () => {
                         rel="nofollow noopener noreferrer"
                         fontWeight="auto"
                         aria-label={item.url}
-                        fontSize=".95rem" 
+                        fontSize=".95rem"
                         padding=".3rem 1.25rem"
-                        width="auto"> 
+                        width="auto"
+                      >
                         Visit
-                        </StyledSocialProfile>
-                     </motion.div>
+                      </StyledSocialProfile>
+                    </motion.div>
                   </div>
                 </a>
               ))

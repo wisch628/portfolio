@@ -45,7 +45,7 @@ const StyledInterests = styled.div`
   /* Calculate how many columns are needed, depending on interests count */
   grid-template-columns: repeat(
     ${({ itemCount }) => Math.ceil(itemCount / 2)},
-    15.625rem
+    10.625rem
   );
   grid-template-rows: repeat(2, auto);
   grid-auto-flow: column;
@@ -66,7 +66,7 @@ const StyledInterests = styled.div`
   }
   @media (min-width: ${({ theme }) => theme.breakpoints.md}) {
     grid-auto-flow: row;
-    grid-template-columns: repeat(3, 15.625rem);
+    grid-template-columns: repeat(4, 10.625rem);
     overflow: visible;
     padding: 0;
   }
@@ -95,7 +95,7 @@ const StyledInterests = styled.div`
   }
 
   .interest {
-    width: 15.625rem;
+    width: 10.625rem;
     height: 3rem;
     display: flex;
     justify-content: flex-start;
@@ -103,10 +103,13 @@ const StyledInterests = styled.div`
     padding: 1rem;
     border: 0.125rem solid ${({ theme }) => theme.colors.primary};
     border-radius: ${({ theme }) => theme.borderRadius};
-    background: ${({ theme }) => theme.colors.card};
-    .icon {
-      margin-right: 0.5rem;
+    background-color: white;
+    color: black;
+    &:hover {
+      background-color: black;
+      color: white;
     }
+    
   }
 `
 
@@ -162,7 +165,7 @@ const Interests = ({ content }) => {
               initial={{ opacity: 0, scaleY: 0 }}
               animate={iControls}
             >
-              <Img className="icon" fixed={icon.childImageSharp.fixed} /> {name}
+            {name}
             </motion.div>
           ))}
           {shownInterests < interests.length && (
