@@ -125,7 +125,7 @@ const StyledProject = styled(motion.div)`
     justify-content: space-between;
     flex-shrink: 1;
     max-width: 62.5rem;
-    margin-bottom: 10rem;
+    // margin-bottom: 10rem;
     padding-right: 0;
     /* Positioning of image and details should vary */
     flex-direction: ${({ position }) =>
@@ -346,22 +346,6 @@ const Projects = ({ content }) => {
           })}
         </div>
       </StyledContentWrapper>
-      {sectionDetails.frontmatter.buttonVisible && (
-        <motion.a
-          ref={bRef}
-          variants={bVariants}
-          animate={bOnScreen ? "visible" : "hidden"}
-          className="cta-btn"
-          href={sectionDetails.frontmatter.buttonUrl}
-          target="_blank"
-          rel="nofollow noopener noreferrer"
-          aria-label="External Link"
-        >
-          <Button type="button" textAlign="center" center>
-            {sectionDetails.frontmatter.buttonText}
-          </Button>
-        </motion.a>
-      )}
     </StyledSection>
   )
 }
