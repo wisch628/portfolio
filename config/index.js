@@ -8,7 +8,7 @@ module.exports = {
   siteUrl: "https://gatsby-starter-portfolio-minimal.netlify.app/",
   siteLanguage: "en_US",
   siteIcon: "content/favicon.png", // Relative to gatsby-config file
-  seoTitleSuffix: "Portfolio Minimal", // SEO title syntax will be e.g. "Imprint - {seoTitleSuffix}"
+  seoTitleSuffix: "Hannah Wischnia Portfolio", // SEO title syntax will be e.g. "Imprint - {seoTitleSuffix}"
   useCookieBar: false, // If you use Google Analytics and want to be GDPR-compliant, set it to true
   googleAnalyticsTrackingId: "", // e.g. UA-XXXXXX-X
 
@@ -41,7 +41,7 @@ module.exports = {
   },
   fonts: {
     primary: "Nanum Gothic, Arial, sans-serif",
-    secondary: "Source Code Pro, Arial, sans-serif"
+    secondary: "Source Code Pro, Arial, sans-serif",
   },
 
   //-- ARTICLES SECTION SETTINGS -----

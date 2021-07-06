@@ -267,8 +267,8 @@ const Projects = ({ content }) => {
         <div className="projects">
           {projects.map((project, key) => {
             const { body, frontmatter } = project.node
-            let url = '/' + frontmatter.category + 'Demo.mp4'
-            console.log(url);
+            let url = "/" + frontmatter.category + "Demo.mp4"
+            console.log(process.env.PUBLIC_URL + url)
             return (
               <VisibilitySensor
                 key={key}
@@ -334,9 +334,19 @@ const Projects = ({ content }) => {
                   <VisibilitySensor
                     onChange={() => setVisibleProject(frontmatter.position)}
                   >
-                   <video width="320" height="240" muted={true} autoPlay={true} loop={true} className="video">
-                     <source src={window.location.origin + url} type="video/mp4" />
-                  </video>
+                    <video
+                      width="320"
+                      height="240"
+                      muted={true}
+                      autoPlay={true}
+                      loop={true}
+                      className="video"
+                    >
+                      <source
+                        src={process.env.PUBLIC_URL + url}
+                        type="video/mp4"
+                      />
+                    </video>
                   </VisibilitySensor>
                 </StyledProject>
               </VisibilitySensor>
