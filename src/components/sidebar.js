@@ -2,7 +2,6 @@ import React from "react"
 import PropTypes from "prop-types"
 import styled from "styled-components"
 import { Link } from "gatsby"
-
 import { navLinks } from "../../config"
 
 const StyledBackdrop = styled.div`
@@ -78,6 +77,13 @@ const Sidebar = ({ open, setOpen }) => {
     <>
       <StyledContainer open={open} aria-hidden={!open} tabIndex={open ? 1 : -1}>
         <StyledNav>
+          <Link
+              className="nav-link"
+              to="/"
+              onClick={() => setOpen(!open)}
+            >
+              Home
+            </Link>
           {menu.map(({ name, url }, key) => (
             <Link
               className="nav-link"
@@ -88,25 +94,6 @@ const Sidebar = ({ open, setOpen }) => {
               {name}
             </Link>
           ))}
-          {button.useFileName ? (
-            <a
-              className="cta-btn"
-              href={`/${button.fileName}`}
-              target="_blank"
-              rel="noopener noreferrer"
-              onClick={() => setOpen(!open)}
-            >
-              {button.name}
-            </a>
-          ) : (
-            <Link
-              className="cta-btn"
-              to={button.url}
-              onClick={() => setOpen(!open)}
-            >
-              {button.name}
-            </Link>
-          )}
         </StyledNav>
       </StyledContainer>
       <StyledBackdrop open={open} />

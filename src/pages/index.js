@@ -143,13 +143,7 @@ export const pageQuery = graphql`
             emoji
             external
             github
-            screenshot {
-              childImageSharp {
-                fluid(maxWidth: 400, quality: 90) {
-                  ...GatsbyImageSharpFluid
-                }
-              }
-            }
+            screenshot
             tags
             position
             buttonVisible

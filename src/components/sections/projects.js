@@ -2,18 +2,14 @@ import React, { useState, useEffect, useRef, useContext } from "react"
 import PropTypes from "prop-types"
 import styled from "styled-components"
 import { MDXRenderer } from "gatsby-plugin-mdx"
-import Img from "gatsby-image"
 import VisibilitySensor from "react-visibility-sensor"
 import { motion } from "framer-motion"
 
 import { useOnScreen } from "../../hooks"
 import Context from "../../context"
 import ContentWrapper from "../../styles/contentWrapper"
-import Underlining from "../../styles/underlining"
-import Button from "../../styles/button"
 import Icon from "../../components/icons"
 import { lightTheme, darkTheme } from "../../styles/theme"
-import meedleDemo from '../../../public/meedleDemo.mp4'
 
 const StyledSection = styled.section`
   width: 100%;
@@ -271,6 +267,8 @@ const Projects = ({ content }) => {
         <div className="projects">
           {projects.map((project, key) => {
             const { body, frontmatter } = project.node
+            let url = '/' + frontmatter.category + 'Demo.mp4'
+            console.log(url);
             return (
               <VisibilitySensor
                 key={key}
@@ -337,7 +335,7 @@ const Projects = ({ content }) => {
                     onChange={() => setVisibleProject(frontmatter.position)}
                   >
                    <video width="320" height="240" muted={true} autoPlay={true} loop={true} className="video">
-                     <source src={meedleDemo} type="video/mp4" />
+                     <source src={window.location.origin + url} type="video/mp4" />
                   </video>
                   </VisibilitySensor>
                 </StyledProject>

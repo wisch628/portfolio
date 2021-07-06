@@ -2,7 +2,7 @@ module.exports = {
   //-- SITE SETTINGS -----
   author: "@konstantinmuenster",
   siteTitle: "Hannah Wischnia",
-  siteShortTitle: "<hannahWischnia />", // Used as logo text in header, footer, and splash screen
+  siteShortTitle: "HW", // Used as logo text in header, footer, and splash screen
   siteDescription:
     "A modern one-page portfolio with a clean yet expressive design.",
   siteUrl: "https://gatsby-starter-portfolio-minimal.netlify.app/",
@@ -41,6 +41,7 @@ module.exports = {
   },
   fonts: {
     primary: "Nanum Gothic, Arial, sans-serif",
+    secondary: "Source Code Pro, Arial, sans-serif"
   },
 
   //-- ARTICLES SECTION SETTINGS -----
@@ -63,7 +64,7 @@ module.exports = {
       url: "https://meedleapp.herokuapp.com",
       img: "/map.png",
       description:
-        "An app that leverages the Google Maps API to help you and your friends find a place to meet",
+        "An app that leverages the Google Maps API to help you and your friends find a place to meet.",
       categories: ["test1", "test2", "test3"],
     },
   ],
@@ -96,28 +97,22 @@ module.exports = {
       },
       {
         name: "Projects",
-        url: "/#articles",
+        url: "/#projects",
       },
       {
         name: "Contact",
         url: "/#contact",
       },
     ],
-    button: {
-      useFileName: true,
-      name: "Resume",
-      fileName: "goldenpuppy.pdf", // the file has to be placed inside the static folder at the root level
-      url: "", // if useFileName=false, you can set an anchor link here and use the button for navigational purposes
-    },
   },
   footerLinks: [
     {
-      name: "Privacy",
-      url: "/privacy",
+      name: "LinkedIn",
+      url: "https://www.linkedin.com/in/hannah-wischnia/",
     },
     {
-      name: "Imprint",
-      url: "/imprint",
+      name: "GitHub",
+      url: "https://github.com/wisch628",
     },
   ],
 }

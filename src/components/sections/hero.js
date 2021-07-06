@@ -10,7 +10,7 @@ import ContentWrapper from "../../styles/contentWrapper"
 import Underlining from "../../styles/underlining"
 import Social from "../social"
 import { lightTheme, darkTheme } from "../../styles/theme"
-import helloImage from '../../../public/helloImage.png'
+import helloImage from '../../../public/favicon.png'
 
 const StyledSection = styled.section`
   width: 100%;
