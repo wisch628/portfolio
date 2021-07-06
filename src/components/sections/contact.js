@@ -9,7 +9,7 @@ import { useOnScreen } from "../../hooks"
 import ContentWrapper from "../../styles/contentWrapper"
 import Underlining from "../../styles/underlining"
 import Social from "../social"
-import sideEmoji from "../../../public/sideEmoji.png"
+// import sideEmoji from process.env.PUBLIC_URL + "/sideEmoji.png"
 
 const StyledSection = styled(motion.section)`
   width: 100%;
@@ -82,9 +82,9 @@ const Contact = ({ content }) => {
         <h3>{frontmatter.title}</h3>
         <MDXRenderer>{body}</MDXRenderer>
         <div className="profile">
-        <img
+          <img
             className="avatar"
-            src={sideEmoji}
+            src={process.env.PUBLIC_URL + "/sideEmoji.png"}
           />
           <div className="details">
             <strong>{frontmatter.name}</strong>

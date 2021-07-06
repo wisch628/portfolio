@@ -8,8 +8,7 @@ import { motion, useAnimation } from "framer-motion"
 import { useOnScreen } from "../../hooks/"
 import Context from "../../context/"
 import ContentWrapper from "../../styles/contentWrapper"
-import computerImage from "../../../public/computer.png"
-
+// import computerImage from process.env.PUBLIC_URL + "/computer.png"
 
 const StyledSection = styled.section`
   width: 100%;
@@ -106,7 +105,7 @@ const About = ({ content }) => {
         > */}
         <img
           className="about-author"
-          src={computerImage}
+          src={process.env.PUBLIC_URL + "/computer.png"}
         />
         {/* </motion.div> */}
       </StyledContentWrapper>

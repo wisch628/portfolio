@@ -10,7 +10,7 @@ import ContentWrapper from "../../styles/contentWrapper"
 import Underlining from "../../styles/underlining"
 import Social from "../social"
 import { lightTheme, darkTheme } from "../../styles/theme"
-import helloImage from '../../../public/favicon.png'
+// import helloImage from process.env.PUBLIC_URL + 'favicon.png'
 
 const StyledSection = styled.section`
   width: 100%;
@@ -121,7 +121,7 @@ const Hero = ({ content }) => {
               {frontmatter.greetings}
               <img
                 className="emoji"
-                src={helloImage}
+                src={process.env.PUBLIC_URL + "favicon.png"}
               />
               {/* </motion.div> */}
             </div>
