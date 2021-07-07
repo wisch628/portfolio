@@ -267,7 +267,8 @@ const Projects = ({ content }) => {
         <div className="projects">
           {projects.map((project, key) => {
             const { body, frontmatter } = project.node
-            let url = "../" + frontmatter.category + "Demo.mp4"
+            let url = "/" + frontmatter.category + "Demo.mp4"
+
             console.log(url)
             return (
               <VisibilitySensor
