@@ -8,7 +8,6 @@ import { motion, useAnimation } from "framer-motion"
 import { useOnScreen } from "../../hooks/"
 import Context from "../../context/"
 import ContentWrapper from "../../styles/contentWrapper"
-// import computerImage from process.env.PUBLIC_URL + "/computer.png"
 
 const StyledSection = styled.section`
   width: 100%;
@@ -103,10 +102,7 @@ const About = ({ content }) => {
           initial={{ opacity: 0, x: 20 }}
           animate={iControls}
         > */}
-        <img
-          className="about-author"
-          src={process.env.PUBLIC_URL + "/computer.png"}
-        />
+        <img className="about-author" src="/computer.png" />
         {/* </motion.div> */}
       </StyledContentWrapper>
     </StyledSection>
