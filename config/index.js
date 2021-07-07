@@ -67,6 +67,14 @@ module.exports = {
         "An app that leverages the Google Maps API to help you and your friends find a place to meet.",
       categories: ["test1", "test2", "test3"],
     },
+    {
+      name: "Open Door Legal Website Redesign",
+      url: "https://opendoorlegal.org/why-legal-aid",
+      img: "",
+      description:
+        "Rebuilt and redesigned eight of the most visited pages on the organization’s website.",
+      categories: ["test1", "test2", "test3"],
+    },
   ],
   shownArticles: 3,
 
