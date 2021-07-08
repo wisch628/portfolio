@@ -1,11 +1,11 @@
 module.exports = {
   //-- SITE SETTINGS -----
-  author: "@konstantinmuenster",
-  siteTitle: "Hannah Wischnia",
+  author: "Hannah Wischnia",
+  siteTitle: "Hannah Wischnia Portfolio",
   siteShortTitle: "HW", // Used as logo text in header, footer, and splash screen
   siteDescription:
-    "A modern one-page portfolio with a clean yet expressive design.",
-  siteUrl: "https://gatsby-starter-portfolio-minimal.netlify.app/",
+    "I am a non-profit professional turned software engineer looking for opportunities to create impact using technology.",
+  siteUrl: "http://hannahwischnia.com/",
   siteLanguage: "en_US",
   siteIcon: "content/favicon.png", // Relative to gatsby-config file
   seoTitleSuffix: "Hannah Wischnia Portfolio", // SEO title syntax will be e.g. "Imprint - {seoTitleSuffix}"
@@ -55,7 +55,7 @@ module.exports = {
       name: "Spell With A Friend",
       url: "http://www.spellwithafriend.com/",
       description:
-        "An application that lets you play the NYTimes Spelling Bee with friends",
+        "Solo developed an application that lets you play the NYTimes Spelling Bee with friends.",
       img: "/bee-clipart.png",
       categories: ["test1", "test2", "test3"],
     },
@@ -64,7 +64,7 @@ module.exports = {
       url: "https://meedleapp.herokuapp.com",
       img: "/map.png",
       description:
-        "An app that leverages the Google Maps API to help you and your friends find a place to meet.",
+        "Leveraged the Google Maps API to create an app that helps you and your friends find a place to meet.",
       categories: ["test1", "test2", "test3"],
     },
     {

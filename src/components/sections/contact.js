@@ -29,17 +29,19 @@ const StyledContentWrapper = styled(ContentWrapper)`
     p {
       margin-top: 0;
       margin-bottom: 0;
+      max-width: 500px;
     }
     .profile {
       display: flex;
-      flex-direction: column;
-      justify-content: flex-start;
+      flex-direction: row;
+      justify-content: center;
+      flex-wrap: wrap;
       margin-top: 3rem;
       margin-bottom: 2rem;
-      @media (min-width: ${({ theme }) => theme.breakpoints.sm}) {
-        flex-direction: row;
+      @media (min-width: 526px) {
         align-items: center;
         margin-bottom: 3rem;
+        justify-content: flex-start;
       }
       .avatar {
         width: 100%;
@@ -79,6 +81,7 @@ const Contact = ({ content }) => {
     >
       <StyledContentWrapper>
         <h3>{frontmatter.title}</h3>
+        <p>{frontmatter.subtitle}</p>
         <MDXRenderer>{body}</MDXRenderer>
         <div className="profile">
           <img className="avatar" src="/sideEmoji.png" />

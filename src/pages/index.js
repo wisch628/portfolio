@@ -161,6 +161,7 @@ export const pageQuery = graphql`
           body
           frontmatter {
             title
+            subtitle
             name
             email
             profileImage

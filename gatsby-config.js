@@ -15,6 +15,7 @@ module.exports = {
     title: siteTitle,
     description: siteDescription,
     siteUrl: siteUrl,
+    image: siteIcon,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -81,6 +82,12 @@ module.exports = {
           emitWarning: true,
           failOnError: false,
         },
+      },
+    },
+    {
+      resolve: `gatsby-plugin-s3`,
+      options: {
+        bucketName: "hannahwischnia.com",
       },
     },
   ],

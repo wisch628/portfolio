@@ -118,7 +118,7 @@ const Hero = ({ content }) => {
               {frontmatter.title}
 
               {frontmatter.greetings}
-              <img className="emoji" src="favicon.png" />
+              <img className="emoji" src="/favicon.png" />
               {/* </motion.div> */}
             </div>
           </h1>
