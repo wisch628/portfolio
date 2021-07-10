@@ -88,7 +88,16 @@ const Contact = ({ content }) => {
           <div className="details">
             <strong>{frontmatter.name}</strong>
             <br />
-            <a href={`mailto:hannahwischnia@gmail.com}`}>
+            <a
+              href={`https://www.linkedin.com/in/hannah-wischnia/`}
+              target="_blank"
+            >
+              <Underlining highlight>
+                linkedin.com/in/hannah-wischnia
+              </Underlining>
+            </a>
+            <br />
+            <a href={`mailto:hannahwischnia@gmail.com}`} target="_blank">
               <Underlining highlight>{frontmatter.email}</Underlining>
             </a>
           </div>
