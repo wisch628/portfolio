@@ -2,7 +2,6 @@
 
 ### Portfolio demo
 ![Portfolio Demo Video](https://user-images.githubusercontent.com/76498844/125204480-2799a900-e243-11eb-900e-c4f93ed8f0b7.gif)
-https://user-images.githubusercontent.com/76498844/125204204-b5749480-e241-11eb-874d-befe355a959c.mov
 
 [See it live](https://hannahwischnia.com)
 
