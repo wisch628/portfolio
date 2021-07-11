@@ -8,9 +8,9 @@
 ### Projects Referenced
 [Spell with a Friend](https://spellwithafriend.com): Solo developed an application that lets you play the NYTimes Spelling Bee with friends.
 
-[Meedle](meedleapp.herokuapp.com): Leveraged the Google Maps API to create an app that helps you and your friends find a place to meet.
+[Meedle](https://meedleapp.herokuapp.com): Leveraged the Google Maps API to create an app that helps you and your friends find a place to meet.
 
-[Open Door Legal Website Redesign](opendoorlegal.org/why-legal-aid): Rebuilt and redesigned eight of the most visited pages on the organization’s website.
+[Open Door Legal Website Redesign](https://opendoorlegal.org/why-legal-aid): Rebuilt and redesigned eight of the most visited pages on the organization’s website.
 
 ### Acknowledgement
 This portolio was greated using the Portfolio Minimal Gatsby Starter by [Konstantin Münster](https://github.com/konstantinmuenster)
